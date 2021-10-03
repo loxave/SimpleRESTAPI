@@ -3,7 +3,7 @@
     define('HOST', 'localhost');
     define('USER', 'root');
     define('PASS', '');
-    define('DB', 'learn_crud');
+    define('DB', 'db_notes');
 
     $db_connect = mysqli_connect(HOST, USER, PASS, DB) or die ('Unable Connect');
 

@@ -16,8 +16,10 @@ require_once('helper.php');
 
             array_push($result, array(
 
-                'id' => $row['id'],
-                'note' => $row['note'],
+                'id' => $row['id'], 
+                'judul' => $row['judul'],
+                'author' => $row['author'],
+                'year' => $row['year'],
 
             ));
         }

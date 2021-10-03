@@ -5,10 +5,11 @@ require_once('helper.php');
 parse_str(file_get_contents('php://input'), $value);
 
     $id = $value['id'];
-    $note = $value['note'];
+    $judul = $value['judul'];
+    $author = $value['author']; 
+    $year = $value['year'];
 
-
-    $query = "UPDATE notes SET note='$note' WHERE id='$id'";
+    $query = "UPDATE notes SET judul='$judul', author='$author', year='$year' WHERE id='$id'";
 
     $sql = mysqli_query($db_connect, $query);
 

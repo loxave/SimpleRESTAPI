@@ -5,8 +5,7 @@
 
     parse_str(file_get_contents('php://input'),$value); 
 
-    $id = $value ['id'];
-   
+    $id = $value ['id'];  
 
     $query = "DELETE FROM user WHERE id = '$id'";
 
@@ -15,7 +14,7 @@
 
     if($sql) {
   
-        echo json_encode(array('Message' => 'Was deleted'));
+        echo json_encode(array('Message' => 'Deleted sucess'));
 
     } else {
         echo json_encode(array('Message' => 'Delete fail'));

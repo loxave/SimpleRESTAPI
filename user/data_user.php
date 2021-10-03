@@ -16,6 +16,10 @@
         array_push($res, array(
 
             'id' => $row['id'],
+            'username' => $row['username'],
+            'password' => $row['password'],
+            'email' => $row['email'],
+            'gambar' => $row['gambar'],
             'nama' => $row['nama'],
 
         ));

@@ -13,7 +13,7 @@ parse_str(file_get_contents('php://input'), $value);
 
     if($sql) {
 
-        echo json_encode(array('Message:' =>  'Deleted!')); 
+        echo json_encode(array('Message:' =>  'Deleted success!')); 
 
     } else {
         echo json_encode(array('Message:' =>  'failed update !')); 

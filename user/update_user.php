@@ -6,9 +6,12 @@
     parse_str(file_get_contents('php://input'),$value); 
 
     $id = $value ['id'];
+    $username = $value ['username'];
+    $password= $value ['password'];
+    $email= $value ['email'];
     $nama = $value ['nama'];
 
-    $query = "UPDATE user SET nama = '$nama' WHERE id = '$id'";
+    $query = "UPDATE user SET username = '$username', password = '$password', email = '$email', nama = '$nama' WHERE id = '$id'";
 
     $sql = mysqli_query($db_connect, $query);
 
